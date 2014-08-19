@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8"> 
+	<title>AdMarvel</title>
+	<link href="css/main_v2.css" rel="stylesheet" /> 
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="data/data.json"></script>
+    <script src="js/functions_v2.js"></script>
+</head>
+<body>
+	<div id="wrapper">
+		<header>
+			<div id="logo"><a href="/"><img src="img/adMarvel_logo.png" alt="adMarvel" width="200"></a></div>
+			<div id="usr">
+				<span>v6.4.0</span> | <a href="#">What's New</a> | <a href="#">Help!</a> | <a href="#">Logout</a> 
+				<br/>
+				<span id="user_name">Welcome </span><br/>
+				<span id="curr_time">Current Time: </span><br/>
+				<span id="last_time">Last Updated Time: </span>
+			</div>
+			<nav id="m_m">
+				<ul>
+					<li id="home"><a href="#">Home</a></li>
+					<li id="ad_details"><a href="#">Ad Details</a></li>
+					<li id="analysis"><a href="#">Analysis</a></li>
+					<li id="campaign"><a href="#">Campaign</a></li>
+					<li id="audience"><a href="#" class="selected">Audience</a></li>
+					<li id="management"><a href="#">Management</a></li>
+					<li id="inventory"><a href="#">Inventory</a></li>
+					<li id="reports"><a href="#">Reports</a></li>
+					<li id="profile"><a href="#">Profile</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<section>
+			<header>
+				<h1>Audience Builder</h1>
+				<a href="#">&lt; Back to Manage Audience Segment</a>
+			</header>	
+			<nav id="s_m">
+				<ul>
+					<li id="aud_ing"><a href="#">Audience Ingestion</a></li>
+					<li id="omad"><a href="#" class="selected">Opera Mediaworks AMP Data</a></li>
+					<li id="party_brand"><a href="#">3<sup>rd</sup> Party-branded Data</a></li>
+				</ul>
+			</nav>
+			<div id="s_d">
+				<fieldset>
+					<div>
+						<label for="a_s">Audience Segment</label> 
+						<input type="text" name="a_s" id="a_s" placeholder="Animal Lovers"/><br/>
+					</div>
+					<div>
+						<label for="descr">Description</label> 
+						<input type="text" name="description" id="descr" placeholder="Animal Lovers..."/>
+					</div>
+				</fieldset>
+				<div id="s_w">
+					<nav id="s_s_m">
+						<ul>
+							<li id="demograph"><a href="#">Demographics</a></li>	
+							<li id="iab_cat"><a href="#" class="selected">IAB Categories</a></li>	
+							<li id="devices"><a href="#">Devices</a></li>	
+						</ul>
+					</nav>
+					<span>Last Updated Time: 05/25, 21:30 GMT</span>
+				</div>
+				<div id="s_wn">
+					<div id="wrap_tb"></div>
+
+					<div id="b" style="display:none">
+						<span id="reset">Reset</span>
+					</div>
+
+					<button id="calc">Calculate Audience Reach</button>
+
+					<div id="r">		
+						<div id="calc_days"><span>TOTALS</span><br/>Last 30 days</div>
+						<div id="calc_mu">My Uniques: <span>0</span></div>
+						<div id="calc_omw">OMW Uniques: <span>0</span></div>
+						<div id="calc_3p">3rd Party Uniques: <span>N/A</span></div>
+					</div>	
+					<div id="btns">
+						<button id="save">Save Audience</button>
+						<button id="cancel">Cancel</button>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>	
+
+	<div class="test"></div>
+</body>
+</html>
